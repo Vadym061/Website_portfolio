@@ -41,7 +41,11 @@ export const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/Realestate.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/Realestate/tree/main/Realestate',
+          linklive: 'https://majestic-bunny-b59969.netlify.app/'
         },
         {
           title: 'title',

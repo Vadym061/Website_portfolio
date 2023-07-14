@@ -29,8 +29,9 @@ export const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              I built sites from scratch and improved existing solutions by
-              working in a team with other developers. 
+              Participation in meetings with interested parties, work on proof
+              of concept, showing demonstrations and presentations, discussing
+              possible solutions "for" and "against" Scrum technology.
             </motion.p>
           </div>
           <motion.div
