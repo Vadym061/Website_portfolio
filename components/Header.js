@@ -14,6 +14,7 @@ const Header = () => {
               height={40}
               alt=""
               priority={true}
+              className="hover:fill-turquoise"
             />
           </Link>
           <Socials />

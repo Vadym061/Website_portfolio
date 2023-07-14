@@ -22,19 +22,17 @@ const Home = () => {
             className="h1 pt-10 xl:pt-0"
           >
             Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            <span className="text-turquoise">Digital Reality</span>
           </motion.h1>
-          <motion.p
+          <motion.h2
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="h3 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I am a front-end programmer with experience in creating web
-            solutions. I built sites from scratch and improved existing
-            solutions by working in a team with other developers.
-          </motion.p>
+            Hello, my name is <span className="text-accent">Vadym,</span> <br/> I'm a <span className="text-turquoise">Front-end developer</span>
+          </motion.h2>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
           </div>

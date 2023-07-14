@@ -8,14 +8,21 @@ import {
   FaFigma,
   FaNodeJs,
   FaGulp,
+  FaInstagram,
+  FaNpm,
+  FaFacebook,
+  FaTelegram,
 } from "react-icons/fa";
 
 import {
-  SiNextdotjs,
   SiTailwindcss,
   SiSass,
   SiAdobephotoshop,
   SiMongodb,
+  SiGmail,
+  SiRedux,
+  SiBootstrap,
+  SiGithub,
 } from "react-icons/si";
 
 //  data
@@ -33,6 +40,10 @@ export const aboutData = [
           <FaGulp />,
           <SiTailwindcss />,
           <SiSass />,
+          <FaNpm />,
+          <SiRedux />,
+          <SiBootstrap />,
+          <SiGithub />,
         ],
       },
       {
@@ -49,8 +60,13 @@ export const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Frontend Developer - DanIT Education Certificate",
+        title: "Frontend Developer - DAN.IT Education Certificate",
         stage: "2023",
+      },
+      {
+        link: "https://dan-it.com.ua/certificates/frontend/shtyra-vadym/",
+        text: "Open link Certificate",
+        img: ["/Certificate.png"],
       },
     ],
   },
@@ -79,8 +95,37 @@ export const aboutData = [
         stage: "2021",
       },
       {
-        title: "Сomputer Operator - Kyiv Professional Lyceum, Ukraine",
+        title: "Сomputer Operator - Kyiv Professional Lyceum",
         stage: "2007/2010",
+      },
+    ],
+  },
+  {
+    title: "connection",
+    info: [
+      {
+        title: "Instagram",
+        send: "Send a message",
+        link: "https://www.instagram.com/direct/t/s_vadym1927/",
+        icons: [<FaInstagram />],
+      },
+      {
+        title: "Facebook",
+        send: "Send a message",
+        link: "https://m.me/100008227939102",
+        icons: [<FaFacebook />],
+      },
+      {
+        title: "Telegram",
+        send: "Send a message",
+        link: "tg://resolve?domain=Vadym061",
+        icons: [<FaTelegram />],
+      },
+      {
+        title: "Email",
+        send: "Send a message",
+        link: "mailto:vadymshtyra2311@gmail.com",
+        icons: [<SiGmail />],
       },
     ],
   },
@@ -115,7 +160,7 @@ const About = () => {
             exit="hidden"
             className="h2 pt-10 xl:pt-0"
           >
-            My <span className="text-accent">experience</span> and practice.
+            My <span className="text-turquoise">experience</span> and practice.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -124,9 +169,9 @@ const About = () => {
             exit="hidden"
             className="max-w-[490px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            I have a passion for coding. The main advantage of programming for
-            me is that it never ends and will be with me throughout my life.
-            Every day is a challenge and I accept it.
+            I am a Frontend programmer with experience in creating web
+            solutions. I built sites from scratch and improved existing
+            solutions by working in a team with other developers.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -169,7 +214,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100p%] after:bg-accent after:transition-all after:duration-300"
+                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
@@ -186,13 +231,41 @@ const About = () => {
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <a
+                    href={`${item.link}`}
+                    className="hover:text-accent transition-all duration-300"
+                    target="_blank"
+                  >
+                    {item.text}
+                  </a>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
+
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
                       return <div className="text-2-xl text-white">{icon}</div>;
                     })}
                   </div>
+                  <div className="flex gap-x-4">
+                    {item.img?.map((image, itemIndex) => {
+                      return (
+                        <img
+                          src={image}
+                          width={300}
+                          height={150}
+                          className="text-2-xl text-white"
+                        />
+                      );
+                    })}
+                  </div>
+
+                  <a
+                    href={`${item.link}`}
+                    target="_blank"
+                    className="hover:text-accent transition-all duration-300"
+                  >
+                    {item.send}
+                  </a>
                 </div>
               );
             })}
