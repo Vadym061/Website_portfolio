@@ -33,26 +33,77 @@ export const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <FaGulp />,
-          <SiTailwindcss />,
-          <SiSass />,
-          <FaNpm />,
-          <SiRedux />,
-          <SiBootstrap />,
-          <SiGithub />,
+          {
+            id: 1,
+            icn: <FaHtml5 />
+          },
+          {
+            id: 2,
+            icn: <FaCss3 />
+          },
+          {
+            id: 3,
+            icn: <FaJs />
+          },
+          {
+            id: 4,
+            icn: <FaReact />
+          },
+          {
+            id: 5,
+            icn: <FaGulp />
+          },
+          {
+            id: 6,
+            icn: <SiTailwindcss />
+          },
+          {
+            id: 7,
+            icn: <SiSass />
+          },
+          {
+            id: 8,
+            icn: <FaNpm />
+          },
+          {
+            id: 9,
+            icn: <SiRedux />
+          },
+          {
+            id: 10,
+            icn: <SiBootstrap />
+          },
+          {
+            id: 11,
+            icn: <SiGithub />
+          }
         ],
       },
       {
         title: "Backend",
-        icons: [<FaNodeJs />, <SiMongodb />],
+        icons: [
+          {
+            id: 1,
+            icn: <FaNodeJs />
+          },
+          {
+            id: 2,
+            icn: <SiMongodb />
+          }
+      ],
       },
       {
         title: "Design",
-        icons: [<FaFigma />, <SiAdobephotoshop />],
+        icons: [
+          {
+            id: 1,
+            icn: <FaFigma />
+          },
+          {
+            id: 2,
+            icn: <SiAdobephotoshop />
+          }
+      ],
       },
     ],
   },
@@ -66,7 +117,12 @@ export const aboutData = [
       {
         link: "https://dan-it.com.ua/certificates/frontend/shtyra-vadym/",
         text: "Open link Certificate",
-        img: ["/Certificate.png"],
+        img: [
+          {
+            id: 1,
+            dan: "/Certificate.png"
+          }
+        ],
       },
     ],
   },
@@ -107,25 +163,45 @@ export const aboutData = [
         title: "Instagram",
         send: "Send a message",
         link: "https://www.instagram.com/direct/t/s_vadym1927/",
-        icons: [<FaInstagram />],
+        icons: [
+         { 
+          id: 1,
+          icn: <FaInstagram />
+        }
+        ],
       },
       {
         title: "Facebook",
         send: "Send a message",
         link: "https://m.me/100008227939102",
-        icons: [<FaFacebook />],
+        icons: [
+          {
+          id: 1,
+          icn: <FaFacebook />
+        }
+      ],
       },
       {
         title: "Telegram",
         send: "Send a message",
         link: "tg://resolve?domain=Vadym061",
-        icons: [<FaTelegram />],
+        icons: [
+          {
+            id: 1,
+            icn: <FaTelegram />
+          }
+        ],
       },
       {
         title: "Email",
         send: "Send a message",
         link: "mailto:vadymshtyra2311@gmail.com",
-        icons: [<SiGmail />],
+        icons: [
+          {
+            id: 1,
+            icn: <SiGmail />
+          }
+        ],
       },
     ],
   },
@@ -243,14 +319,15 @@ const About = () => {
 
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2-xl text-white">{icon}</div>;
+                      return <div key={icon.id} className="text-2-xl text-white">{icon.icn}</div>;
                     })}
                   </div>
                   <div className="flex gap-x-4">
                     {item.img?.map((image, itemIndex) => {
                       return (
                         <img
-                          src={image}
+                        key={image.id}
+                          src={image.dan}
                           width={300}
                           height={150}
                           className="text-2-xl text-white"

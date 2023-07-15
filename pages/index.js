@@ -31,7 +31,7 @@ const Home = () => {
             exit="hidden"
             className="h3 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Hello, my name is <span className="text-accent">Vadym,</span> <br/> I'm a <span className="text-turquoise">Front-end developer</span>
+            Hello, my name is <span className="text-accent">Vadym,</span> <br/> Im a <span className="text-turquoise">Front-end developer</span>
           </motion.h2>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />

@@ -31,7 +31,7 @@ export const Work = () => {
             >
               Participation in meetings with interested parties, work on proof
               of concept, showing demonstrations and presentations, discussing
-              possible solutions "for" and "against" Scrum technology.
+              possible solutions for and against Scrum technology.
             </motion.p>
           </div>
           <motion.div
