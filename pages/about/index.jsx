@@ -216,7 +216,7 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 pt-25 text-center xl:text-left">
       <Circles />
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -228,13 +228,13 @@ const About = () => {
         <Avatar />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="flex-1 z-10 mt-[80px] flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 pt-10 xl:pt-0"
+            className="h2 text-[25px] mb-2 xl:mb-4 xl:pt-0 xl:text-[54px]"
           >
             My <span className="text-turquoise">experience</span> and practice.
           </motion.h2>
@@ -243,7 +243,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[490px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[490px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0"
           >
             I am a Frontend programmer with experience in creating web
             solutions. I built sites from scratch and improved existing

@@ -18,7 +18,7 @@ export const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 sm:mt-12 md:mt-20 xl:mt-4"
+              className="h2 mt-0 text-[25px] sm:mt-10 md:text-[54px] xl:mt-4"
             >
               My services <span className="text-turquoise">.</span>
             </motion.h2>
@@ -27,7 +27,7 @@ export const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="max-w-[400px] mx-auto lg:mx-0"
             >
               I have a passion for coding. Exploring, learning every day, and
               gaining knowledge are all things I love about programming. The

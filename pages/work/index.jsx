@@ -18,7 +18,7 @@ export const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 sm:mt-32 md:mt-13 lg:mt-12"
+              className="h2 mt-0 text-[25px] sm:mt-[160px] md:text-[54px] md:mt-0 xl:mt-4"
             >
               My work <span className="text-turquoise">.</span>
             </motion.h2>
