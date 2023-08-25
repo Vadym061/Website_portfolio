@@ -4,6 +4,8 @@ import Image from "next/image";
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
+import Typewriter from "typewriter-effect";
+
 
 import { motion } from "framer-motion";
 
@@ -19,7 +21,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 pt-10 xl:pt-0"
+            className="h1 pt-2 xl:pt-0"
           >
             Transforming Ideas <br /> Into{" "}
             <span className="text-turquoise">Digital Reality</span>
@@ -29,9 +31,16 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h3 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="h3 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-2 xl:mb-16"
           >
-            Hello, my name is <span className="text-accent">Vadym,</span> <br/> Im a <span className="text-turquoise">Front-end developer</span>
+             <Typewriter
+            options={{
+              delay: 200,
+              strings: ["Hello my name is Vadym", "Im a Front-end developer"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
           </motion.h2>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />

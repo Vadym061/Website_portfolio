@@ -20,13 +20,13 @@ export const serviceData = [
     icon: <RxCrop />,
     title: "Punctuality",
     description:
-      'Always meeting deadlines. I take responsibility for my work. I respond quickly to messages. Always in touch.',
+      'Always meeting deadlines. I take responsibility for my work. I respond quickly to messages. Always in touch. ))',
   },
   {
     icon: <RxPencil2 />,
     title: "Qualitatively",
     description:
-      'When performing the work, the maximum compliance of the layout. Adherence to all indents and dimensions.',
+      'When performing the work, the maximum compliance of the layout. Adherence to all indents and dimensions. ))',
   },
   {
     icon: <RxDesktop />,
@@ -75,7 +75,7 @@ const ServiceSlider = () => {
               <div className="text-4xl text-accent mb-4">{item.icon}</div>
               <div>
                 <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">{item.description}</p>
+                <p className="max-w-[350px] text-[14px] leading-normal">{item.description}</p>
               </div>
               <div className="text-3xl">
                 <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"/>

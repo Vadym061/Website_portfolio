@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Typewriter from "typewriter-effect";
 import {
   FaHtml5,
   FaCss3,
@@ -8,11 +8,9 @@ import {
   FaFigma,
   FaNodeJs,
   FaGulp,
-  FaInstagram,
   FaNpm,
-  FaFacebook,
-  FaTelegram,
 } from "react-icons/fa";
+
 
 import {
   SiTailwindcss,
@@ -35,47 +33,47 @@ export const aboutData = [
         icons: [
           {
             id: 1,
-            icn: <FaHtml5 />
+            icn: <FaHtml5 className="text-[#ff8700] text-[19px]"/>
           },
           {
             id: 2,
-            icn: <FaCss3 />
+            icn: <FaCss3 className="text-[#0014ff] text-[19px]" />
           },
           {
             id: 3,
-            icn: <FaJs />
+            icn: <FaJs className="text-[#fffa00] text-[19px]"/>
           },
           {
             id: 4,
-            icn: <FaReact />
+            icn: <FaReact className="text-[#00c3ff] text-[19px]"/>
           },
           {
             id: 5,
-            icn: <FaGulp />
+            icn: <FaGulp className="text-[#ff0000] text-[19px]"/>
           },
           {
             id: 6,
-            icn: <SiTailwindcss />
+            icn: <SiTailwindcss className="text-[#0087ff] text-[19px]"/>
           },
           {
             id: 7,
-            icn: <SiSass />
+            icn: <SiSass className="text-[#ff008c] text-[19px]"/>
           },
           {
             id: 8,
-            icn: <FaNpm />
+            icn: <FaNpm className="text-[#ff3500] text-[19px]"/>
           },
           {
             id: 9,
-            icn: <SiRedux />
+            icn: <SiRedux className="text-[#ff00ff] text-[19px]"/>
           },
           {
             id: 10,
-            icn: <SiBootstrap />
+            icn: <SiBootstrap className="text-[#a034a0] text-[19px]"/>
           },
           {
             id: 11,
-            icn: <SiGithub />
+            icn: <SiGithub className="text-[#fff] text-[19px]"/>
           }
         ],
       },
@@ -84,11 +82,11 @@ export const aboutData = [
         icons: [
           {
             id: 1,
-            icn: <FaNodeJs />
+            icn: <FaNodeJs className="text-[#009604] text-[20px]"/>
           },
           {
             id: 2,
-            icn: <SiMongodb />
+            icn: <SiMongodb className="text-[#00df06] text-[20px]"/>
           }
       ],
       },
@@ -97,11 +95,11 @@ export const aboutData = [
         icons: [
           {
             id: 1,
-            icn: <FaFigma />
+            icn: <FaFigma className="text-[#9700df] text-[20px]"/>
           },
           {
             id: 2,
-            icn: <SiAdobephotoshop />
+            icn: <SiAdobephotoshop className="text-[#0c18d1] text-[20px]"/>
           }
       ],
       },
@@ -128,6 +126,7 @@ export const aboutData = [
   },
   {
     title: "experience",
+    
     info: [
       {
         title: "Frontend developer - DanIT Education, Student",
@@ -141,6 +140,7 @@ export const aboutData = [
   },
   {
     title: "credentials",
+    
     info: [
       {
         title: "Frontend developer - DanIT Education, Kyiv, Ukraine",
@@ -156,55 +156,7 @@ export const aboutData = [
       },
     ],
   },
-  {
-    title: "connection",
-    info: [
-      {
-        title: "Instagram",
-        send: "Send a message",
-        link: "https://www.instagram.com/direct/t/s_vadym1927/",
-        icons: [
-         { 
-          id: 1,
-          icn: <FaInstagram />
-        }
-        ],
-      },
-      {
-        title: "Facebook",
-        send: "Send a message",
-        link: "https://m.me/100008227939102",
-        icons: [
-          {
-          id: 1,
-          icn: <FaFacebook />
-        }
-      ],
-      },
-      {
-        title: "Telegram",
-        send: "Send a message",
-        link: "tg://resolve?domain=Vadym061",
-        icons: [
-          {
-            id: 1,
-            icn: <FaTelegram />
-          }
-        ],
-      },
-      {
-        title: "Email",
-        send: "Send a message",
-        link: "mailto:vadymshtyra2311@gmail.com",
-        icons: [
-          {
-            id: 1,
-            icn: <SiGmail />
-          }
-        ],
-      },
-    ],
-  },
+  
 ];
 
 import Avatar from "../../components/Avatar";
@@ -216,14 +168,14 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 pt-25 text-center xl:text-left">
+    <div id="about" className="h-full bg-primary/30 pt-25 text-center xl:text-left">
       <Circles />
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[320px]"
+        className="hidden xl:flex absolute bottom-0 -left-[150px]"
       >
         <Avatar />
       </motion.div>
@@ -238,17 +190,23 @@ const About = () => {
           >
             My <span className="text-turquoise">experience</span> and practice.
           </motion.h2>
-          <motion.p
+          <motion.h3
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[490px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[490px]  mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0"
           >
-            I am a Frontend programmer with experience in creating web
-            solutions. I built sites from scratch and improved existing
-            solutions by working in a team with other developers.
-          </motion.p>
+              <Typewriter
+            options={{
+              delay: 50,
+              strings: ["I am a Frontend programmer with experience in creating web solutions.", "I built sites from scratch and improved existing solutions by working in a team with other developers."],
+              autoStart: true,
+              loop: true,
+              pauseFor: 3500,
+            }}
+          />
+          </motion.h3>
           <motion.div
             variants={fadeIn("right", 0.6)}
             initial="hidden"
@@ -283,7 +241,7 @@ const About = () => {
           exit="hidden"
           className="flex flex-col w-full xl:max-w-[49%] h-[480px]"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex flex-wrap justify-center gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -294,7 +252,9 @@ const About = () => {
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
+                  <div className="flex">
                   {item.title}
+                  </div>
                 </div>
               );
             })}
@@ -317,7 +277,7 @@ const About = () => {
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
 
-                  <div className="flex gap-x-4">
+                  <div className="flex gap-x-4 flex-wrap justify-center">
                     {item.icons?.map((icon, itemIndex) => {
                       return <div key={icon.id} className="text-2-xl text-white">{icon.icn}</div>;
                     })}
@@ -336,13 +296,6 @@ const About = () => {
                     })}
                   </div>
 
-                  <a
-                    href={`${item.link}`}
-                    target="_blank"
-                    className="hover:text-accent transition-all duration-300"
-                  >
-                    {item.send}
-                  </a>
                 </div>
               );
             })}

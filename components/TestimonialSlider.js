@@ -5,21 +5,21 @@ export const testimonialData = [
     name: 'Anne Smith',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Satisfied with work',
   },
   {
     image: '/t-avt-2.png',
     name: 'Jane Doe',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Great job and on time',
   },
   {
     image: '/t-avt-3.png',
     name: 'Jhon Doe',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Great',
   },
 ];
 

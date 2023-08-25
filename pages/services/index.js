@@ -2,6 +2,7 @@
 import ServiceSlider from "../../components/ServiceSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
+import Typewriter from "typewriter-effect";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -22,18 +23,23 @@ export const Services = () => {
             >
               My services <span className="text-turquoise">.</span>
             </motion.h2>
-            <motion.p
+            <motion.h3
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
               className="max-w-[400px] mx-auto lg:mx-0"
             >
-              I have a passion for coding. Exploring, learning every day, and
-              gaining knowledge are all things I love about programming. The
-              main benefit of this for me is that it never ends and will be with
-              me throughout my life. Every day is a challenge and I accept it.
-            </motion.p>
+               <Typewriter
+            options={{
+              delay: 50,
+              strings: [" I have a passion for coding. Exploring, learning every day, and gaining knowledge are all things I love about programming.", "The main benefit of this for me is that it never ends and will be withme throughout my life. Every day is a challenge and I accept it."],
+              autoStart: true,
+              loop: true,
+              pauseFor: 3500,
+            }}
+          />
+            </motion.h3>
           </div>
           <motion.div
             variants={fadeIn("down", 0.6)}

@@ -2,7 +2,7 @@
 import WorkSlider from "../../components/WorkSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
-
+import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
@@ -22,17 +22,23 @@ export const Work = () => {
             >
               My work <span className="text-turquoise">.</span>
             </motion.h2>
-            <motion.p
+            <motion.h3
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Participation in meetings with interested parties, work on proof
-              of concept, showing demonstrations and presentations, discussing
-              possible solutions for and against Scrum technology.
-            </motion.p>
+               <Typewriter
+            options={{
+              delay: 50,
+              strings: ["Participation in meetings with interested parties, work on proof of concept....","showing demonstrations and presentations, discussing possible solutions for and against Scrum technology."],
+              autoStart: true,
+              loop: true,
+              pauseFor: 3500,
+            }}
+          />
+            </motion.h3>
           </div>
           <motion.div
             variants={fadeIn("down", 0.6)}
