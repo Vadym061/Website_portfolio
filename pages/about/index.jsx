@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
+import Image from "next/image"
 import {
   FaHtml5,
   FaCss3,
@@ -285,7 +286,7 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {item.img?.map((image, itemIndex) => {
                       return (
-                        <img
+                        <Image
                         key={image.id}
                           src={image.dan}
                           width={300}
