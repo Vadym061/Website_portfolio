@@ -116,12 +116,14 @@ export const aboutData = [
       {
         link: "https://dan-it.com.ua/certificates/frontend/shtyra-vadym/",
         text: "Open link Certificate",
-        img: [
-          {
-            id: 1,
-            dan: "/Certificate.png"
-          }
-        ],
+      },
+      {
+        title: "JavaScript2.0 - ItGid Certificate",
+        stage: "2023",
+      },
+      {
+        link: "https://itgid.info/ru/certificate/view?Certificate%5Buid%5D=x7d344peg4gv",
+        text: "Open link Certificate",
       },
     ],
   },
@@ -140,9 +142,13 @@ export const aboutData = [
     ],
   },
   {
-    title: "credentials",
+    title: "education",
     
     info: [
+      {
+        title: "JavaScript2.0 - ItGid Ukraine",
+        stage: "2023",
+      },
       {
         title: "Frontend developer - DanIT Education, Kyiv, Ukraine",
         stage: "2021 - 2023",
@@ -275,7 +281,7 @@ const About = () => {
                   >
                     {item.text}
                   </a>
-                  <div className="hidden md:flex">-</div>
+                  <div className="hidden md:flex"></div>
                   <div>{item.stage}</div>
 
                   <div className="flex gap-x-4 flex-wrap justify-center">
@@ -283,7 +289,7 @@ const About = () => {
                       return <div key={icon.id} className="text-2-xl text-white">{icon.icn}</div>;
                     })}
                   </div>
-                  <div className="flex gap-x-4">
+                  {/* <div className="flex gap-x-4">
                     {item.img?.map((image, itemIndex) => {
                       return (
                         <Image
@@ -295,7 +301,7 @@ const About = () => {
                         />
                       );
                     })}
-                  </div>
+                  </div> */}
 
                 </div>
               );

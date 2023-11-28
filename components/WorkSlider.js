@@ -5,6 +5,14 @@ export const workSlides = {
       images: [
         {
           title: 'title',
+          path: '/deliveryPlus.jpg',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/deliverPlus',
+          linklive: 'https://delivery-plus.netlify.app/'
+        },
+        {
+          title: 'title',
           path: '/BestLaptop.png',
           git: 'GitHub',
           demo: 'Live Demo',
@@ -13,19 +21,11 @@ export const workSlides = {
         },
         {
           title: 'title',
-          path: '/Forkio.png',
+          path: "/GiardDisign.png",
           git: 'GitHub',
           demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/Forkio.git',
-          linklive: 'https://comforting-kashata-59afc3.netlify.app/'
-        },
-        {
-          title: 'title',
-          path: '/Roller.png',
-          git: 'GitHub',
-          demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/Roller.git',
-          linklive: 'https://elaborate-piroshki-f36a5f.netlify.app/'
+          linkgit: 'https://github.com/Vadym061/adRespect',
+          linklive: 'https://giarddesignadrespect.netlify.app/'
         },
         {
           title: 'title',
@@ -41,6 +41,14 @@ export const workSlides = {
       images: [
         {
           title: 'title',
+          path: '/Roller.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/Roller.git',
+          linklive: 'https://elaborate-piroshki-f36a5f.netlify.app/'
+        },
+        {
+          title: 'title',
           path: '/Realestate.png',
           git: 'GitHub',
           demo: 'Live Demo',
@@ -49,15 +57,11 @@ export const workSlides = {
         },
         {
           title: 'title',
-          path: "/GiardDisign.png",
+          path: '/Forkio.png',
           git: 'GitHub',
           demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/adRespect',
-          linklive: 'https://giarddesignadrespect.netlify.app/'
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
+          linkgit: 'https://github.com/Vadym061/Forkio.git',
+          linklive: 'https://comforting-kashata-59afc3.netlify.app/'
         },
         {
           title: 'title',
