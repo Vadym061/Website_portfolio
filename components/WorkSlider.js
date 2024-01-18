@@ -8,8 +8,8 @@ export const workSlides = {
           path: '/deliveryPlus.jpg',
           git: 'GitHub',
           demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/deliverPlus',
-          linklive: 'https://delivery-plus.netlify.app/'
+          linkgit: 'https://github.com/Vadym061/deliveryPlus',
+          linklive: 'https://deliveryplus.netlify.app/'
         },
         {
           title: 'title',
