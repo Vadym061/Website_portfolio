@@ -65,7 +65,11 @@ export const workSlides = {
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/shopOnline.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/Shop',
+          
         },
       ],
     },
