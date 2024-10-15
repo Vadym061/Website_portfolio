@@ -9,8 +9,9 @@ export const workSlides = {
           git: 'GitHub',
           demo: 'Live Demo',
           linkgit: 'https://github.com/Vadym061/deliveryPlus',
-          linklive: 'https://deliveryplus.netlify.app/'
+          linklive: 'https://dostavka-plus.ua/ua/'
         },
+        
         {
           title: 'title',
           path: '/BestLaptop.png',
@@ -29,11 +30,11 @@ export const workSlides = {
         },
         {
           title: 'title',
-          path: '/TheHam.png',
+          path: '/kaktus-plants.png',
           git: 'GitHub',
           demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/TheHam.git',
-          linklive: 'https://magical-sopapillas-918a9d.netlify.app/'
+          linkgit: 'https://github.com/Vadym061/flowers',
+          linklive: 'https://kaktus-plants.netlify.app/'
         },
       ],
     },
@@ -73,6 +74,19 @@ export const workSlides = {
         },
       ],
     },
+    {
+      images: [
+        {
+          
+          title: 'title',
+          path: '/TheHam.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/TheHam.git',
+          linklive: 'https://magical-sopapillas-918a9d.netlify.app/'
+        },
+      ] 
+    }
   ],
 };
 
