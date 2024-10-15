@@ -85,6 +85,14 @@ export const workSlides = {
           linkgit: 'https://github.com/Vadym061/TheHam.git',
           linklive: 'https://magical-sopapillas-918a9d.netlify.app/'
         },
+        {
+          title: 'title',
+          path: '/chat-app.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/chat',
+          linklive: 'https://chat-psi-rouge-58.vercel.app/'
+        },
       ] 
     }
   ],
