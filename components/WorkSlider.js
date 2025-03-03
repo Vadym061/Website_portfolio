@@ -11,7 +11,14 @@ export const workSlides = {
           linkgit: 'https://github.com/Vadym061/deliveryPlus',
           linklive: 'https://dostavka-plus.ua/ua/'
         },
-        
+        {
+          title: 'title',
+          path: "/malbet.png",
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061',
+          linklive: 'https://malbet-camrun.netlify.app/'
+        },
         {
           title: 'title',
           path: '/BestLaptop.png',
@@ -20,14 +27,7 @@ export const workSlides = {
           linkgit: 'https://github.com/DimaTkachenko95/-fe_4_online_final_project_1.git',
           linklive: 'https://best-laptop24.onrender.com/'
         },
-        {
-          title: 'title',
-          path: "/GiardDisign.png",
-          git: 'GitHub',
-          demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/adRespect',
-          linklive: 'https://giarddesignadrespect.netlify.app/'
-        },
+       
         {
           title: 'title',
           path: '/kaktus-plants.png',
@@ -87,12 +87,12 @@ export const workSlides = {
         },
         {
           title: 'title',
-          path: '/chat-app.png',
+          path: "/GiardDisign.png",
           git: 'GitHub',
           demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/chat',
-          linklive: 'https://chat-psi-rouge-58.vercel.app/'
-        },
+          linkgit: 'https://github.com/Vadym061/adRespect',
+          linklive: 'https://giarddesignadrespect.netlify.app/'
+        }
       ] 
     }
   ],
