@@ -21,6 +21,14 @@ export const workSlides = {
         },
         {
           title: 'title',
+          path: '/comeseeandbuy.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/ComeSeeAndBuy',
+          linklive: 'https://comeseeandbuy12.netlify.app/'
+        },
+        {
+          title: 'title',
           path: '/BestLaptop.png',
           git: 'GitHub',
           demo: 'Live Demo',
@@ -28,6 +36,11 @@ export const workSlides = {
           linklive: 'https://best-laptop24.onrender.com/'
         },
        
+        
+      ],
+    },
+    {
+      images: [
         {
           title: 'title',
           path: '/kaktus-plants.png',
@@ -36,10 +49,6 @@ export const workSlides = {
           linkgit: 'https://github.com/Vadym061/flowers',
           linklive: 'https://kaktus-plants.netlify.app/'
         },
-      ],
-    },
-    {
-      images: [
         {
           title: 'title',
           path: '/Roller.png',
@@ -47,6 +56,37 @@ export const workSlides = {
           demo: 'Live Demo',
           linkgit: 'https://github.com/Vadym061/Roller.git',
           linklive: 'https://elaborate-piroshki-f36a5f.netlify.app/'
+        },
+       
+        {
+          title: 'title',
+          path: '/shopOnline.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/Shop',
+          
+        },
+        {
+          title: 'title',
+          path: "/GiardDisign.png",
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/adRespect',
+          linklive: 'https://giarddesignadrespect.netlify.app/'
+        }
+       
+      ],
+    },
+    {
+      images: [
+        {
+          
+          title: 'title',
+          path: '/TheHam.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/TheHam.git',
+          linklive: 'https://magical-sopapillas-918a9d.netlify.app/'
         },
         {
           title: 'title',
@@ -63,36 +103,8 @@ export const workSlides = {
           demo: 'Live Demo',
           linkgit: 'https://github.com/Vadym061/Forkio.git',
           linklive: 'https://comforting-kashata-59afc3.netlify.app/'
-        },
-        {
-          title: 'title',
-          path: '/shopOnline.png',
-          git: 'GitHub',
-          demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/Shop',
-          
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          
-          title: 'title',
-          path: '/TheHam.png',
-          git: 'GitHub',
-          demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/TheHam.git',
-          linklive: 'https://magical-sopapillas-918a9d.netlify.app/'
-        },
-        {
-          title: 'title',
-          path: "/GiardDisign.png",
-          git: 'GitHub',
-          demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/adRespect',
-          linklive: 'https://giarddesignadrespect.netlify.app/'
         }
+        
       ] 
     }
   ],
