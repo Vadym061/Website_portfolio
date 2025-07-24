@@ -3,6 +3,15 @@ export const workSlides = {
   slides: [
     {
       images: [
+         {
+          title: 'title',
+          path: '/fuex.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/crypto',
+          linklive: 'https://crypto-seven-puce.vercel.app/'
+        },
+
         {
           title: 'title',
           path: '/deliveryPlus.jpg',
@@ -27,7 +36,13 @@ export const workSlides = {
           linkgit: 'https://github.com/Vadym061/ComeSeeAndBuy',
           linklive: 'https://comeseeandbuy12.netlify.app/'
         },
-        {
+       
+        
+      ],
+    },
+    {
+      images: [
+         {
           title: 'title',
           path: '/BestLaptop.png',
           git: 'GitHub',
@@ -35,12 +50,6 @@ export const workSlides = {
           linkgit: 'https://github.com/DimaTkachenko95/-fe_4_online_final_project_1.git',
           linklive: 'https://best-laptop24.onrender.com/'
         },
-       
-        
-      ],
-    },
-    {
-      images: [
         {
           title: 'title',
           path: '/kaktus-plants.png',
@@ -49,14 +58,7 @@ export const workSlides = {
           linkgit: 'https://github.com/Vadym061/flowers',
           linklive: 'https://kaktus-plants.netlify.app/'
         },
-        {
-          title: 'title',
-          path: '/Roller.png',
-          git: 'GitHub',
-          demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/Roller.git',
-          linklive: 'https://elaborate-piroshki-f36a5f.netlify.app/'
-        },
+       
        
         {
           title: 'title',
@@ -68,17 +70,35 @@ export const workSlides = {
         },
         {
           title: 'title',
-          path: "/GiardDisign.png",
+          path: '/spGrunt.png',
           git: 'GitHub',
           demo: 'Live Demo',
-          linkgit: 'https://github.com/Vadym061/adRespect',
-          linklive: 'https://giarddesignadrespect.netlify.app/'
+          linkgit: 'https://autodiscont.netlify.app/',
+          
         }
+    
        
       ],
     },
     {
       images: [
+        {
+          title: 'title',
+          path: "/GiardDisign.png",
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/adRespect',
+          linklive: 'https://giarddesignadrespect.netlify.app/'
+        },
+        
+         {
+          title: 'title',
+          path: '/Roller.png',
+          git: 'GitHub',
+          demo: 'Live Demo',
+          linkgit: 'https://github.com/Vadym061/Roller.git',
+          linklive: 'https://elaborate-piroshki-f36a5f.netlify.app/'
+        },
         {
           
           title: 'title',
@@ -96,6 +116,9 @@ export const workSlides = {
           linkgit: 'https://github.com/Vadym061/Realestate/tree/main/Realestate',
           linklive: 'https://majestic-bunny-b59969.netlify.app/'
         },
+        
+      ],
+      images: [
         {
           title: 'title',
           path: '/Forkio.png',
@@ -104,8 +127,7 @@ export const workSlides = {
           linkgit: 'https://github.com/Vadym061/Forkio.git',
           linklive: 'https://comforting-kashata-59afc3.netlify.app/'
         }
-        
-      ] 
+      ]
     }
   ],
 };
